@@ -3,15 +3,18 @@ document.addEventListener('DOMContentLoaded', () => {
   
   obtn.addEventListener('click', () => {
     let displayDiv = document.createElement('div');
-    displayDiv.className = 'ddiv';
+    displayDiv.className = 'modal';
 
-    let header = document.createElement('header');
+    let header = document.createElement('h2');
+	  header.className ='modal-header';
     header.innerText = "Model Header";
     let tbody = document.createElement('tbody');
+	  
     let para = document.createElement('p');
+	  para.className = 'modal-body';
     para.textContent = "Model Body Content";
     let cbutton = document.createElement('button');
-    cbutton.className = 'close';
+    cbutton.className = 'close-modal';
     cbutton.innerHTML = "X";
 
     tbody.appendChild(para);

@@ -4,7 +4,7 @@ body{
 	
 	
 }
-   .ddiv{
+   .modal{
 	   width:80%;
 	   height:100px;
 	   border:1px solid;
@@ -12,22 +12,22 @@ body{
 	   margin-top:10%;
 	   margin-left:10%
 	   }
-header{
+h2{
 	background-color:green;
-	padding:15px;
+	padding:10px;
 	margin:10px;
 }
 p{
 	display:inline;
 	margin:15px
 }
-.close{
+.close-modal{
     margin-left:200px;
 	background-color:white;
 	border:none;
 	cursor:pointer;
 }
-.close:active{
+.close-modal:active{
 color:red;
 
 }

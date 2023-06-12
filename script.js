@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-  let obtn = document.getElementById('open');
+  let obtn = document.getElementById('openModal');
   
   obtn.addEventListener('click', () => {
     let displayDiv = document.createElement('div');

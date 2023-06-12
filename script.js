@@ -6,21 +6,33 @@ document.addEventListener('DOMContentLoaded', () => {
     displayDiv.className = 'modal';
 
     let header = document.createElement('h2');
-	  header.className ='modal-header';
-    header.innerText = "Model Header";
-    let tbody = document.createElement('tbody');
-	  
+    header.className = 'modal-header';
+    header.innerText = "Modal Header";
+    
     let para = document.createElement('p');
-	  para.className = 'modal-body';
-    para.textContent = "Model Body Content";
+    para.className = 'modal-body';
+    para.textContent = "Modal Body Content";
+    
     let cbutton = document.createElement('button');
     cbutton.className = 'close-modal';
     cbutton.innerHTML = "X";
 
-    tbody.appendChild(para);
-    tbody.appendChild(cbutton);
-    displayDiv.appendChild(header);
-    displayDiv.appendChild(tbody);
+    let modalContent = document.createElement('div');
+    modalContent.className = 'modal-content';
+    
+    let modalHeader = document.createElement('div');
+    modalHeader.className = 'modal-header';
+    modalHeader.appendChild(header);
+    modalHeader.appendChild(cbutton);
+    
+    let modalBody = document.createElement('div');
+    modalBody.className = 'modal-body';
+    modalBody.appendChild(para);
+    
+    modalContent.appendChild(modalHeader);
+    modalContent.appendChild(modalBody);
+    
+    displayDiv.appendChild(modalContent);
 
     document.body.appendChild(displayDiv);
 
@@ -29,4 +41,6 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 });
+
+
 

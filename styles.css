@@ -38,7 +38,7 @@
   margin: 0;
 }
 
-#closeModalBtn {
+.close-modal {
   background-color: transparent;
   border: none;
   color: #888;
@@ -46,7 +46,7 @@
   cursor: pointer;
 }
 
-#closeModalBtn:focus,
+.close-modal:focus,
 #openModal:focus {
   outline: none;
 }

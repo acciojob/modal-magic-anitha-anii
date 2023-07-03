@@ -1,6 +1,6 @@
 var modal = document.getElementById("modal");
 var openModalBtn = document.getElementById("openModal");
-var closeModalBtn = document.getElementById("closeModalBtn");
+var closeModalBtn = document.querySelector(".close-modal");
 
 openModalBtn.addEventListener("click", function() {
   modal.style.display = "block";

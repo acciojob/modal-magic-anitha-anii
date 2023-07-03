@@ -47,6 +47,6 @@
 }
 
 #closeModalBtn:focus,
-#openModalBtn:focus {
+#openModal:focus {
   outline: none;
 }
